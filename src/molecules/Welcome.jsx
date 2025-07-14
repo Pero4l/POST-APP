@@ -1,5 +1,6 @@
 import React from "react";
 import { useQuery } from "@tanstack/react-query";
+import Navbar from "./Navbar";
 
 function Welcome() {
   const { data, isLoading, isError } = useQuery({
@@ -16,8 +17,10 @@ function Welcome() {
   const posts = Array.isArray(data) ? data : data?.data || [];
 
   return (
+    <>
+    <Navbar/>
     <div className="max-w-7xl mx-auto px-4 py-12">
-      <h2 className="text-3xl font-bold text-center mb-10 text-pink-600">All Posts</h2>
+      <h2 className="lg:text-3xl text-2xl font-bold text-center mb-10 text lg:mb-16 lg:mt-20"> WELCOME TO ALL POST</h2>
             {/* <h1>{posts.categories.name}</h1> */}
       
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -41,6 +44,7 @@ function Welcome() {
         ))}
       </div>
     </div>
+    </>
   );
 }
 

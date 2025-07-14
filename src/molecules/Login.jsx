@@ -40,10 +40,10 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex lg:items-center lg:justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-6 rounded shadow-md w-full max-w-sm">
-        <h2 className="text-2xl font-bold mb-4 text-center text-pink-600">Login</h2>
-        <form className="space-y-4">
+        <h2 className="text-2xl font-bold mb-4 text-center text-blue-600 lg:mt-20 mt-44">Login</h2>
+        <form className="space-y-4 mt-14 lg:mb-14">
           <input
             type="email"
             name="email"
@@ -64,7 +64,7 @@ const Login = () => {
             type="submit"
             onClick={handleSubmit}
             disabled={isLoading}
-            className="w-full bg-pink-600 text-white py-2 rounded hover:bg-pink-700"
+            className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-200 hover:text-black "
           >
             {isLoading ? 'Logging in...' : 'Login'}
           </button>

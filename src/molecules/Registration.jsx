@@ -53,9 +53,9 @@ const Registration = () => {
   };
 
   return (
-    <div className="flex items-center justify-center px-4 py-6 min-h-screen bg-gradient-to-r from-pink-100 to-purple-200">
+    <div className="flex lg:items-center lg:justify-center lg:px-4 lg:py-6 min-h-screen bg-gradient-to-r from-blue-100 to-blue-200">
       <div className="bg-white shadow-lg rounded-xl w-full max-w-md p-8">
-        <h2 className="text-2xl font-bold text-center text-pink-600 mb-6">
+        <h2 className="text-2xl font-bold text-center text-blue-600 mb-6 mt-10">
           Create an Account
         </h2>
 
@@ -121,7 +121,7 @@ const Registration = () => {
             type="button"
             onClick={handleSubmit}
             disabled={isLoading}
-            className="w-full bg-pink-600 text-white py-2 rounded-md hover:bg-pink-700 transition duration-200"
+            className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-200 hover:text-black transition duration-200"
           >
             {isLoading ? 'Registering...' : 'Register'}
           </button>
@@ -135,7 +135,7 @@ const Registration = () => {
 
         <p className="text-center text-sm text-gray-600 mt-4">
           Already have an account?{' '}
-          <span className="text-pink-600 hover:underline cursor-pointer" onClick={() => navigate('/login')}>
+          <span className="text-blue-600 hover:underline cursor-pointer" onClick={() => navigate('/login')}>
             Login here
           </span>
         </p>
