@@ -7,6 +7,7 @@ import Registration from './molecules/Registration'
 import Login from './molecules/Login'
 import Welcome from './molecules/Welcome'
 import Landing from './molecules/Landing'
+import Createpost from './molecules/Createpost';
 import './index.css'
 
 function App() {
@@ -16,10 +17,11 @@ function App() {
     <>
 
     <Routes>
-      <Route path='/landing' element = {<Landing/>} />
-      <Route path='/' element = {<Welcome/>} />
+      <Route path='/' element = {<Landing/>} />
+      <Route path='/welcome' element = {<Welcome/>} />
       <Route path='/signup' element = {<Registration/>} />
       <Route path='/login' element ={<Login/>} />
+      <Route path='/createpost' element = {<Createpost/>} />
     </Routes>
 
     </>

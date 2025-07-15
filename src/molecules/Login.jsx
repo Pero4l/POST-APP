@@ -22,7 +22,7 @@ const Login = () => {
       if (data.token) {
         localStorage.setItem('token', data.token);
         localStorage.setItem('user', JSON.stringify(data.user));
-        navigate('/');
+        navigate('/welcome');
       } else {
         setMessage(data.message || 'Invalid credentials');
       }

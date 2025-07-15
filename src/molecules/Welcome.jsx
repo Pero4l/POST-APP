@@ -2,6 +2,7 @@ import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { FiPlusSquare } from "react-icons/fi";
 
 
 function Welcome() {
