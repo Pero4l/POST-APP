@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useMutation } from '@tanstack/react-query';
 import { useNavigate } from 'react-router-dom';
 import Nav2 from './Nav2';
+import Footer from './Footer';
 
 const Registration = () => {
   const navigate = useNavigate();
@@ -144,6 +145,7 @@ const Registration = () => {
         </p>
       </div>
     </div>
+    <Footer/>
     </>
   );
 };

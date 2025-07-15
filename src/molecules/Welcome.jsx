@@ -18,6 +18,7 @@ function Welcome() {
 
   const posts = Array.isArray(data) ? data : data?.data || [];
 
+
   return (
     <>
     <Navbar/>
