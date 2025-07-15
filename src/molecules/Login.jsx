@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useMutation } from '@tanstack/react-query';
 import { useNavigate } from 'react-router-dom';
+import Nav2 from './Nav2';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -40,7 +41,9 @@ const Login = () => {
   };
 
   return (
-    <div className="flex lg:items-center lg:justify-center min-h-screen bg-gray-100">
+      <>
+      <Nav2/>
+        <div className="flex lg:items-center lg:justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-6 rounded shadow-md w-full max-w-sm">
         <h2 className="text-2xl font-bold mb-4 text-center text-blue-600 lg:mt-20 mt-44">Login</h2>
         <form className="space-y-4 mt-14 lg:mb-14">
@@ -74,6 +77,7 @@ const Login = () => {
         )}
       </div>
     </div>
+      </>
   );
 };
 

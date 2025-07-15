@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useMutation } from '@tanstack/react-query';
 import { useNavigate } from 'react-router-dom';
+import Nav2 from './Nav2';
 
 const Registration = () => {
   const navigate = useNavigate();
@@ -36,7 +37,7 @@ const Registration = () => {
         password: '',
         team_name: '',
       });
-      setTimeout(() => navigate('/login'), 1500);
+      setTimeout(() => navigate('/login'), 2000);
     },
     onError: () => {
       setMessage('Something went wrong. Please try again.');
@@ -53,6 +54,8 @@ const Registration = () => {
   };
 
   return (
+    <>
+    <Nav2/>
     <div className="flex lg:items-center lg:justify-center lg:px-4 lg:py-6 min-h-screen bg-gradient-to-r from-blue-100 to-blue-200">
       <div className="bg-white shadow-lg rounded-xl w-full max-w-md p-8">
         <h2 className="text-2xl font-bold text-center text-blue-600 mb-6 mt-10">
@@ -141,6 +144,7 @@ const Registration = () => {
         </p>
       </div>
     </div>
+    </>
   );
 };
 

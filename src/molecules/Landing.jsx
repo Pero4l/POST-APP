@@ -1,9 +1,12 @@
 import React from 'react'
 import animation from "/animation.jpeg"
 import { Link } from 'react-router-dom'
+import Nav2 from './Nav2'
 
 export default function Landing() {
   return (
+    <>
+    <Nav2/>
     <div className="flex  justify-center min-h-screen bg-gradient-to-r from-blue-100 to-blue-200">
     <div className="bg-white shadow-lg rounded-xl w-full  p-8">
 
@@ -27,5 +30,6 @@ export default function Landing() {
 
     </div>
   </div>
+  </>
   )
 }
