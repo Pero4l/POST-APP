@@ -25,7 +25,7 @@ export default function Navbar() {
                 <li>Services</li>
 
                 <div>
-                <Link to="/landing"><button className='bg-blue-400 p-2 text-white px-5 rounded-lg hover:bg-red-500'>Log Out</button></Link>
+                <Link to="/"><button className='bg-blue-400 p-2 text-white px-5 rounded-lg hover:bg-red-500'>Log Out</button></Link>
             </div>
             </ul>
            
@@ -44,7 +44,7 @@ export default function Navbar() {
                 <li>Services</li>
 
                 <div>
-                <Link to="/landing"><button className='bg-blue-400 p-1 w-full rounded-md lg:p-2 text-white'>Log Out</button></Link>
+                <Link to="/"><button className='bg-blue-400 p-1 w-full rounded-md lg:p-2 text-white'>Log Out</button></Link>
             </div>
             </ul>
     </div>

@@ -8,6 +8,7 @@ import Login from './molecules/Login'
 import Welcome from './molecules/Welcome'
 import Landing from './molecules/Landing'
 import Createpost from './molecules/Createpost';
+import Listandkeys from './ListandKeys';
 import './index.css'
 
 function App() {
@@ -15,8 +16,11 @@ function App() {
 
   return (
     <>
+  
 
     <Routes>
+    <Route path='/list' element = {<Listandkeys/>} />
+
       <Route path='/' element = {<Landing/>} />
       <Route path='/welcome' element = {<Welcome/>} />
       <Route path='/signup' element = {<Registration/>} />
